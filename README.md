@@ -41,6 +41,11 @@ You do **not** need to publish the skill. Switching the Test tab to Development 
 
 The skill should greet you and keep listening for spoken replies — same as a published skill, but only for your account while Development testing is on.
 
+**Exit the skill**
+- Say **"Alexa, stop"** or **"Alexa, cancel"** (or just **stop** / **cancel** while the mic is open)
+- Sakha replies `फिर मिलते हैं. Bye bye.`, saves session memory, and ends
+- Saying **बंद करो** asks Sakha to wrap up in conversation, but **"Alexa, stop"** is the reliable way to leave
+
 ## Repo layout
 
 | Path | Role |
