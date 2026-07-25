@@ -23,11 +23,20 @@ Alexa TTS → spoken aloud on the device
 ```
 
 - **Interaction model** (`interaction-model.json`) — tells Alexa which words open the skill and how free speech is captured. Almost every utterance is routed into a catch-all `ChatIntent` so the learner can speak naturally.
-- **Lambda code** (`lambda/index.js`) — receives each turn, calls the LLM, keeps the microphone open, and stores per-learner memory in S3.
+- **Lambda code** (`lambda/index.js`) — receives each turn, calls the LLM, keeps the microphone open, and updates learner memory.
 - **System prompt** (`lambda/sakha-prompt.txt`) — personality, pedagogy, age bands, Hinglish rules, and child-safety policy.
 - **fal.ai** — hosts the LLM call. You only need an API key; the endpoint and model are already set in `index.js`.
 
-Long-term memory is a compact JSON profile per first name (band, mistakes, mastered items, session count), saved when a session ends and injected at the next launch so Sakha can warm up from past mistakes.
+## Memory
+
+Sakha remembers learners across sessions, so the next time someone opens the skill it can greet them by name and warm up from things they struggled with last time.
+
+- **During a session** — Sakha keeps the current conversation in mind so each reply follows what was just said.
+- **When the session ends** (for example after “Alexa, stop”) — it saves a short note about that learner: name, age band, recent mistakes, what they got right, and how many sessions they have done.
+- **Where it is stored** — in Amazon S3 storage that comes with your Alexa-hosted skill (Amazon sets this up for you; you do not create a bucket yourself). Memory stays with your skill / Amazon account — it is not stored on fal.ai or on the Echo device.
+- **Who it is for** — notes are keyed by first name, so different people in the house can each have their own progress if they use different names.
+
+Sakha never reads these notes aloud or tells the learner that it “keeps a file” on them; it just uses them quietly to teach better next time.
 
 ## Setup
 
