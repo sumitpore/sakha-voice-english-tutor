@@ -1,0 +1,294 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "सखा",
+          "intents": [
+              {
+                  "name": "ChatIntent",
+                  "slots": [
+                      {
+                          "name": "query",
+                          "type": "AnythingSlot"
+                      }
+                  ],
+                  "samples": [
+                      "{query}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              }
+          ],
+          "types": [
+              {
+                  "name": "AnythingSlot",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "ashwini"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "sumit"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं सुमित हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं ashwini हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मेरा नाम sumit है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं दस साल का हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं तीस साल की हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "दस साल"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "तीस"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "हां"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "नहीं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "हां ठीक है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "yes"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "no"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "ok"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "ready"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "yes I am ready"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "water"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "I want water"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "I want some water please"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "could I have some water please"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मुझे पानी चाहिए"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मुझे समझ नहीं आया"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "समझ नहीं आया"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "फिर से बोलिए"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "फिर से"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "धीरे बोलिए"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "धीरे"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "हिंदी में बताइए"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मतलब क्या है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "इसका मतलब क्या है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "hint"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "hint दीजिए"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "आगे"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "आगे चलिए"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "next"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मेरा score क्या है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं office में काम करता हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं school जाती हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मैं घर पर हूं"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "this is a book"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "I am going to the market"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "she is my sister"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "he goes to office every day"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "मुझे English सीखनी है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "office के लिए सीखना है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "interview की तैयारी करनी है"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "आज क्या सीखेंगे"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "एक बार और"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "बहुत अच्छा"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

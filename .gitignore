@@ -1,0 +1,5 @@
+node_modules/
+lambda/secrets.js
+.env
+*.zip
+.DS_Store

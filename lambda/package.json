@@ -1,0 +1,17 @@
+{
+  "name": "sakha",
+  "version": "1.0.0",
+  "description": "Sakha, a voice English tutor for Hindi speaking homes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.86.0",
+    "ask-sdk-s3-persistence-adapter": "^2.14.0",
+    "aws-sdk": "^2.1400.0"
+  }
+}
